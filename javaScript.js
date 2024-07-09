@@ -1,7 +1,7 @@
  let computerScore = 0;
  let humanScore = 0;
  
- /* function getComputerChoice(){
+ function getComputerChoice(){
     let rock = "Rock";
     let paper = "Paper";
     let scissors = "Scissors";
@@ -18,9 +18,6 @@
     }
 }  
 
-console.log(getComputerChoice());
-*/
-
 function getHumanChoice(){
     let humanChoice = prompt("Do you have rock, paper or scissors? ");
 
@@ -32,10 +29,20 @@ function getHumanChoice(){
     }
     else if(humanChoice.toLocaleLowerCase() === "scissors"){
         return "Scissors";
-    }else{
+    }
+    else{
         return "That option is not valid or you wrote it wrong";
     }
 
 }
 
-console.log(getHumanChoice());
+function playRound(computerChoice, humanChoice){
+    if( computerChoice === humanChoice){
+        return "Tie, try again"
+    }
+    else if()
+}
+const computerSelection = getComputerChoice();
+const humanSelection = getHumanChoice();
+
+console.log(playRound(computerSelection, humanSelection));
