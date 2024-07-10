@@ -23,10 +23,10 @@ function getHumanChoice(){
     if(humanChoice.toLowerCase() === "rock"){
         return "Rock";
     }
-    else if(humanChoice.toLocaleLowerCase() === "paper"){
+    else if(humanChoice.toLowerCase() === "paper"){
         return "Paper";
     }
-    else if(humanChoice.toLocaleLowerCase() === "scissors"){
+    else if(humanChoice.toLowerCase() === "scissors"){
         return "Scissors";
     }
     else{
@@ -43,8 +43,11 @@ function playGame(){
     let humanScore = 0;
     for(let i = 0; i < 5; i++){
         function playRound(computerChoice, humanChoice){
+            console.log(computerChoice);
+            console.log(humanChoice);
+            
             if( computerChoice === humanChoice){
-                return "Tie, try again"
+                return console.log("Tie, try again");
             }
             else if(computerChoice === "Rock" && humanChoice === "Scissors"){
                 computerScore += 1;
